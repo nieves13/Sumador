@@ -10,5 +10,12 @@ public class TestASumar {
         String resultado = sumi.mostrar();
         assertEquals("5 = 5",resultado );
     }
+    
+    @Test
+    public void testNegativo() {
+        ASumar sumi = new ASumar("-5");
+        String resultado = sumi.mostrar();
+        assertEquals("",resultado );
+    }
 
 }

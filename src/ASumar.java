@@ -19,6 +19,9 @@ public class ASumar {
         if (numero.length() == 1) {
             return (numero + " = " + numero);
         }
+        else if (numero.substring(0, 1).equals("-")) {
+        	return "";
+        }
         return null;
     }
 }
