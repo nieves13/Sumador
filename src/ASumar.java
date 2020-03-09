@@ -22,6 +22,16 @@ public class ASumar {
         else if (numero.substring(0, 1).equals("-")) {
         	return "";
         }
+        else if (numero.length() > 1) {
+            int suma = 0;
+
+            for (int i = 0; i < valor_inicial.length(); i++) {
+                // Cadena de un dígito.
+                String digito = valor_inicial.substring(i, i + 1);
+                suma = suma + Integer.parseInt(digito);
+            }
+            return Integer.toString(suma);
+        }
         return null;
     }
 }

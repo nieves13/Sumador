@@ -17,5 +17,12 @@ public class TestASumar {
         String resultado = sumi.mostrar();
         assertEquals("",resultado );
     }
+    
+    @Test
+    public void testMasCifras() {
+        ASumar sumi = new ASumar("123456789");
+        String resultado = sumi.mostrar();
+        assertEquals("45",resultado );
+    }
 
 }
